@@ -14,8 +14,8 @@ def first_challenge
   }
 
   #your code here
-
-
+ flavorArray = contacts["Freddy Mercury"]["favorite_icecream_flavors"].shift()
+  
   #remember to return your newly altered contacts hash!
   contacts
 end
