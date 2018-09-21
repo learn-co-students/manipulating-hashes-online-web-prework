@@ -14,9 +14,10 @@ def first_challenge
   }
 
   #your code here
- flavorArray = contacts["Freddy Mercury"]["favorite_icecream_flavors"].shift()
-  
+ flavorArray = contacts["Freddy Mercury"][:favorite_icecream_flavors]
+  flavorArray.delete_if { |flavor| flavor == "strawberry"}
   #remember to return your newly altered contacts hash!
-  contacts
+  contacts["Freddy Mercury"][:favorite_icecream_flavors] = flavorArray
 end
 
+first_challenge()
