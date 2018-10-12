@@ -7,12 +7,8 @@ def second_challenge
   }
 
   #code your solution here!
-  array = contacts["Freddy Mercury"][:favorite_icecream_flavors]
-  array.delete_if { |flavor| flavor == "strawberry"}
-
-  
-  contacts["Freddy Mercury"][:favorite_icecream_flavors] = array
-  
-  
+  array = []
+  array.each do |key,value| value.each {|item| groceryArray.push(item)}}
+   groceryArray
 
 end
