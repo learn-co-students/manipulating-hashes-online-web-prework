@@ -11,5 +11,6 @@ def second_challenge
   array.each do |key,val| 
     val.each do |x| array.push(x)}
   end
+end
    array
 end
