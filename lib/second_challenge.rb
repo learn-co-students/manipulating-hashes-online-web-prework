@@ -9,6 +9,6 @@ def second_challenge
   #code your solution here!
   array = []
   array.each do |key,val| 
-    val.each {|x| array.push(x)}}
+    val.each do |x| array.push(x)}}
    array
 end
