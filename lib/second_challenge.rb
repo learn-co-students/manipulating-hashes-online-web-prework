@@ -8,12 +8,14 @@ def second_challenge
 
   #code your solution here!
 
-  arr = []
+  #arr = []
   
-  groceries.each do |key, value|
-    arr.concat value
-  end
+  #groceries.each do |key, value|
+  #  arr.concat value
+  #end
   
-  arr
+  #arr
+
+  groceries.values.flatten
 
 end
