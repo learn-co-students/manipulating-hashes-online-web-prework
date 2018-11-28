@@ -8,6 +8,12 @@ def second_challenge
 
   #code your solution here!
 
+  arr = []
   
+  groceries.each do |key, value|
+    arr.concat value
+  end
+  
+  arr
 
 end
