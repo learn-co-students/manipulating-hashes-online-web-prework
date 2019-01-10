@@ -8,14 +8,6 @@ def second_challenge
   }
 
   #code your solution here!
-  groceries.values do |list, data|
+  groceries.values.flatten
 
-    data.collect do |category, ingredients|
-
-
-
-
-    end.first
-
-  end
 end
