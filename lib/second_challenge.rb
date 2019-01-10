@@ -1,3 +1,4 @@
+require 'pry'
 def second_challenge
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
@@ -7,7 +8,14 @@ def second_challenge
   }
 
   #code your solution here!
+  groceries.values do |list, data|
 
-  
+    data.each do |category, ingredients|
 
+
+
+
+    end.first
+
+  end
 end
