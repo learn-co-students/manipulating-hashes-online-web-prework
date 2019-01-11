@@ -1,3 +1,6 @@
+
+require 'pry'
+
 def second_challenge
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
@@ -7,7 +10,8 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
+a = [groceries[:dairy],groceries[:vegetable], groceries[:meat], groceries[:grains]]
+a.flatten
 
 end
+

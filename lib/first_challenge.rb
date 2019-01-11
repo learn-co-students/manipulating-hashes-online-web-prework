@@ -22,12 +22,14 @@ contacts.each do |person, data|
       
       value.each do |flavor|
         
-        flavor.delete_if {|flavor| flavor = "strawberry"}
+        value.delete_if {|flavor| flavor == "strawberry"}
 
   #remember to return your newly altered contacts hash!
-  return contacts
                 end
               end
             end  
-        end    
+        end 
+      contacts  
     end
+    
+    
