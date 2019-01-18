@@ -1,3 +1,5 @@
+require 'pry'
+
 def second_challenge
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
@@ -7,7 +9,11 @@ def second_challenge
   }
 
   #code your solution here!
+  combined_groceries = []
+  groceries.collect do |category, container|
+    combined_groceries.concat container
+  end
 
-  
+  combined_groceries
 
 end
