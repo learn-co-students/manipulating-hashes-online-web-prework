@@ -1,4 +1,4 @@
-require "Pry"
+require "pry"
 
 def first_challenge
   contacts = {
@@ -17,13 +17,10 @@ def first_challenge
   }
 
   #your code here
-  binding.pry
-  contacts["Freddy Mercury"].each do |attribute, data|
-    data.each do |attribute, value|
-      :favorite_icecream_flavors.delete_if do |flavor|
-        flavor == "strawberry"
-      end
-    end
+
+  contacts.each do |attribute, data|
+      puts "#{data}"
+      binding.pry
   end
 
 
