@@ -1,3 +1,4 @@
+
 # Code Along Exercise: Manipulating Hashes
 
 ## Objectives
@@ -16,8 +17,8 @@ contacts = {
     favorite_icecream_flavors: ["chocolate", "vanilla"],
     knows: nil
   },
-  "Freddy Mercury" => {
     name: "Freddy",
+  "Freddy Mercury" => {
     email: "freddy@mercury.com",
     favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
   }
