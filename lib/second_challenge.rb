@@ -7,7 +7,9 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
-
+new_sol = []
+groceries.each do |food_group, values|
+    new_sol += values
+end
+ new_sol
 end
