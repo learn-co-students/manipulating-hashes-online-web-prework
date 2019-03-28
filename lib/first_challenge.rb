@@ -1,3 +1,4 @@
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -13,10 +14,19 @@ def first_challenge
     }
   }
 
-  #your code here
+  # Iterate through contacts hash and remove "strawberry" from :favorite_icecream_flavors
+  contacts["Freddy Mercury"][:favorite_icecream_flavors].delete_if { |value| value == "strawberry"}
+  
+=begin 
+  # initial deletion method
+  contacts["Freddy Mercury"].collect do |attribute, value|
+    if attribute == :favorite_icecream_flavors && value.include?("strawberry")
+        value.delete("strawberry")
+    end
+=end     
 
 
-  #remember to return your newly altered contacts hash!
+  #Return newly altered contacts hash
   contacts
 end
 
