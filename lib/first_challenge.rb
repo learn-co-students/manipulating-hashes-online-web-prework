@@ -25,7 +25,6 @@ def first_challenge
     end
 =end     
 
-
   #Return newly altered contacts hash
   contacts
 end
