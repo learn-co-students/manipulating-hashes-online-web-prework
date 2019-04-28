@@ -6,7 +6,10 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  #code your solution here!
+  #This shouldn't work but it does
+  #new_array = groceries[:dairy] + groceries[:vegetable] + groceries[:meat] + groceries[:grains]
+  
+  groceries.values.flatten
 
   
 
