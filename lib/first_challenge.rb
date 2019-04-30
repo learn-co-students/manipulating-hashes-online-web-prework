@@ -16,12 +16,12 @@ def first_challenge
   }
 
   #your code here
-  contacts.each do |person, data|
-  data.each do |attribute, value|
-    if attribute == :favorite_icecream_flavors
-      value.each do |flavor|
-        puts "#{flavor}"
-            value.delete_if {|x| x == "strawberry"}    
+contacts.each do |k, v|
+ v.each do |a, d| 
+  if a == :favorite_icecream_flavors
+    d.each do |flavor|
+      #puts "#{flavor}" + "hi"
+      d.delete_if {|x| x == "strawberry"}    
 
       end
     end
