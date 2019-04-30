@@ -8,8 +8,8 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-  
-  groceries.values.flatten #use flatten to remove multidimensional
+  #use flatten to remove multidimensional
+  groceries.values.flatten 
   
   #binding.pry
   
