@@ -8,6 +8,13 @@ def second_challenge
 
   #code your solution here!
 
-  
+  grocery_array = []
+  grocery_values = groceries.values()
 
+  grocery_values.each do |element|
+    element.each do |content|
+      grocery_array.push(content)
+    end
+  end
+  return grocery_array
 end
