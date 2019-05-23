@@ -8,23 +8,19 @@
       knows: nil
     },
     "Freddy Mercury" => {
-      name: "Freddy",
-      email: "freddy@mercury.com",
-      favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
+      name:"Freddy",
+      email:"freddy@mercury.com",
+      favorite_icecream_flavors:["strawberry", "cookie dough", "mint chip"]
     }
   }
   #your code here
-contacts.each do |person, data|
   
-    data.each do |attribute, value|
+    "Freddy Mercury".each do |key, value|
 
-if attribute == :favorite_icercream_flavors
-  value.each do |flavor|
-falvor.delete_if == "strawberry"
         end
      end
   end
     #remember to return your newly altered contacts hash!
 contact
    end
-end
+ end
