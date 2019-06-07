@@ -19,7 +19,7 @@ def second_challenge
     p arr
 
 # p furniture.map {|x| x.values[0]}
-#binding.pry
+# binding.pry
   
 
 end
