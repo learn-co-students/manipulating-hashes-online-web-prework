@@ -1,8 +1,25 @@
-require_relative 'spec_helper'
-require_relative '../lib/first_challenge.rb'
+def first_challenge
+  contacts = {
+    "Jon Snow" => {
+      name: "Jon",
+      email: "jon_snow@thewall.we", 
+      favorite_icecream_flavors: ["chocolate", "vanilla", "mint chip"],
+      knows: nil
+    },
+    "Freddy Mercury" => {
+      name: "Freddy",
+      email: "freddy@mercury.com",
+      favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
+    }
+  }
 
-describe "#first_challenge" do 
-  it "iterates over the contacts hash and deletes strawberry from Freddy Mercury's favorite ice cream flavors" do 
-    expect(first_challenge["Freddy Mercury"][:favorite_icecream_flavors]).to_not include("strawberry")
+  contacts["Freddy Mercury"].each do |attribute, value|
+      if attribute == :favorite_icecream_flavors
+        value.delete_if do |flavor|
+          flavor == "strawberry"
+      end
+    end
   end
+  #remember to return your newly altered contacts hash!
+  contacts
 end
