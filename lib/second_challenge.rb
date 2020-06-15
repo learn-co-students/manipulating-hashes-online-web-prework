@@ -7,7 +7,7 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
-
+  groceryArray = []
+  groceries.each { |cat,value| value.each {|item| groceryArray.push(item)}}
+  groceryArray
 end
