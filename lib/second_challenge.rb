@@ -7,7 +7,7 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
+  new_groceries = groceries.values # gets the values of the groceries hash
+  new_groceries.flatten
 
 end
