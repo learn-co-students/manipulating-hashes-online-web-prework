@@ -14,8 +14,15 @@ def first_challenge
   }
 
   #your code here
-
-
+  contacts.each do |key, value| 
+      value.each do |attr, data|
+        if attr == :favorite_icecream_flavors
+            data.shift
+        end
+      
+      end
+    end
+    
   #remember to return your newly altered contacts hash!
   contacts
 end
