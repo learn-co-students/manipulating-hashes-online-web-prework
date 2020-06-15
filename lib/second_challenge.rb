@@ -1,3 +1,4 @@
+
 def second_challenge
   groceries = {
    dairy: ["milk", "yogurt", "cheese"],
@@ -7,7 +8,8 @@ def second_challenge
   }
 
   #code your solution here!
-
   
+groceries.values.flatten
 
 end
+
