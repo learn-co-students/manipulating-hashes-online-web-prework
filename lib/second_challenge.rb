@@ -7,7 +7,9 @@ def second_challenge
   }
 
   #code your solution here!
-
-  
-
+ groceries.each do |x, y| 
+   x.values = y
+   y.flatten
+   return y
+  end
 end
