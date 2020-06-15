@@ -1,3 +1,5 @@
+require 'pry'
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -14,9 +16,16 @@ def first_challenge
   }
 
   #your code here
-
-
+contacts.each do |key, value|
+ value.each do |attribute, data| 
+  if attribute == :favorite_icecream_flavors
+    data.each do |flavor|
+      data.delete_if {|x| x == "strawberry"}    
+      end
+    end
+  end
+end
   #remember to return your newly altered contacts hash!
-  contacts
+   contacts
 end
 
